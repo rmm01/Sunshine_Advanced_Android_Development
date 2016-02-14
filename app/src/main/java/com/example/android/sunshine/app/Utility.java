@@ -22,6 +22,9 @@ import android.net.NetworkInfo;
 import android.preference.PreferenceManager;
 import android.text.format.Time;
 
+import com.example.android.sunshine.app.sync.SunshineSyncAdapter;
+import com.example.android.sunshine.app.sync.SunshineSyncAdapter.LocationStatus;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
