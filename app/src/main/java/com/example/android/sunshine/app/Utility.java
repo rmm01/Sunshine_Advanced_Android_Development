@@ -275,8 +275,7 @@ public class Utility {
     static public @SunshineSyncAdapter.LocationStatus
     int getLocationStatus(Context c){
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(c);
-        return sp.getInt(c.getString(R.string.pref_location_status_key),
-                SunshineSyncAdapter.LOCATION_STATUS_UNKNOWN);
+        return sp.getInt(c.getString(R.string.pref_location_status_key), SunshineSyncAdapter.LOCATION_STATUS_UNKNOWN);
     }
 
     /**
@@ -289,5 +288,4 @@ public class Utility {
         spe.putInt(c.getString(R.string.pref_location_status_key), SunshineSyncAdapter.LOCATION_STATUS_UNKNOWN);
         spe.apply();
     }
-
 }
