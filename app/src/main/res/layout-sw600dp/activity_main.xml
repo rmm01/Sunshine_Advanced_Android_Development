@@ -52,7 +52,6 @@
                 android:paddingStart="@dimen/abc_list_item_padding_horizontal_material">
 
                 <ImageView
-                    android:id="@+id/logo"
                     android:layout_width="wrap_content"
                     android:layout_height="?attr/listPreferredItemHeight"
                     android:layout_gravity="center_vertical"
@@ -67,6 +66,7 @@
         android:id="@+id/layout_center"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:layout_centerInParent="true" />
 
     <fragment
@@ -81,6 +81,9 @@
         android:layout_below="@id/appbar"
         tools:layout="@android:layout/list_content" />
 
+    <!-- We set elevation here only so the detail view doesn't get occluded
+         by the AppBar -->
+
     <FrameLayout
         android:id="@+id/weather_detail_container"
         android:layout_width="match_parent"
@@ -91,9 +94,11 @@
         android:layout_marginTop="?attr/actionBarSize"
         android:layout_alignStart="@id/layout_center"
         android:elevation="@dimen/appbar_elevation"
+        android:layout_marginRight="@dimen/list_item_extra_padding"
+        android:layout_marginEnd="@dimen/list_item_extra_padding"
         android:paddingRight="@dimen/abc_list_item_padding_horizontal_material"
         android:paddingEnd="@dimen/abc_list_item_padding_horizontal_material"
-        android:paddingBottom="@dimen/abc_list_item_padding_horizontal_material"
+        android:paddingBottom="@dimen/detail_container_bottom_margin"
         />
 
 </RelativeLayout>
