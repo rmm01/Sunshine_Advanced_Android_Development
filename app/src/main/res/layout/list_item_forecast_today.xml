@@ -24,15 +24,13 @@
     android:background="@drawable/touch_selector_white"
     android:elevation="4dp"
     >
-
-
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:columnCount="2">
 
         <TextView
-                android:id="@+id/list_item_date_textview"
+            android:id="@+id/list_item_date_textview"
             android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
             android:layout_marginTop="@dimen/abc_list_item_padding_horizontal_material"
             android:fontFamily="sans-serif"
@@ -45,7 +43,7 @@
             tools:text="Today, April 03" />
 
         <ImageView
-                android:id="@+id/list_item_icon"
+            android:id="@+id/list_item_icon"
             android:layout_width="0dp"
             android:adjustViewBounds="true"
             android:maxHeight="@dimen/today_icon"
@@ -55,7 +53,7 @@
             tools:src="@drawable/art_clouds" />
 
         <TextView
-                android:id="@+id/list_item_high_textview"
+            android:id="@+id/list_item_high_textview"
             android:layout_width="0dp"
             android:fontFamily="sans-serif-light"
             android:gravity="center_horizontal"
@@ -66,7 +64,7 @@
             tools:text="19" />
 
         <TextView
-                android:id="@+id/list_item_forecast_textview"
+            android:id="@+id/list_item_forecast_textview"
             android:layout_width="0dp"
             android:fontFamily="sans-serif"
             android:gravity="center_horizontal"
@@ -76,7 +74,7 @@
             tools:text="Rainy" />
 
         <TextView
-                android:id="@+id/list_item_low_textview"
+            android:id="@+id/list_item_low_textview"
             android:layout_width="0dp"
             android:layout_marginBottom="@dimen/abc_list_item_padding_horizontal_material"
             android:fontFamily="sans-serif-light"
