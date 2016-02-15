@@ -244,9 +244,8 @@ public class Utility {
     public static boolean usingLocalGraphics(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         String sunshineArtPack = context.getString(R.string.pref_art_pack_sunshine);
-        String s = context.getString(R.string.pref_art_pack_key);
-        String s2 = prefs.getString(s, sunshineArtPack);
-        return s2.equals(sunshineArtPack);
+        return prefs.getString(context.getString(R.string.pref_art_pack_key),
+                sunshineArtPack).equals(sunshineArtPack);
     }
 
     /**
