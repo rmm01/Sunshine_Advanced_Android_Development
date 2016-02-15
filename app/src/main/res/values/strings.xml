@@ -84,10 +84,10 @@
     <string name="pref_art_pack_label">Icon Pack</string>
 
     <!-- Label for Sunshine option in art pack preference [CHAR LIMIT=25] -->
-    <string name="pref_art_pack_label_sunshine">HD</string>
+    <string name="pref_art_pack_label_sunshine">Default</string>
 
     <!-- Label for cute dogs option in art pack preference [CHAR LIMIT=25] -->
-    <string name="pref_art_pack_label_cute_dogs">Standard</string>
+    <string name="pref_art_pack_label_cute_dogs">Low Resolution</string>
 
     <string name="pref_art_pack_label_dark">Dark</string>
 
