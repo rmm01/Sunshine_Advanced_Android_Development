@@ -16,8 +16,7 @@
  -->
 <!-- Layout for weather forecast list item for future day (not today) -->
 <!-- Make the background of our selector a non-transparent color -->
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
@@ -36,13 +35,14 @@
         android:orientation="horizontal">
 
         <ImageView
+            tools:src="@drawable/art_clear"
             android:id="@+id/list_item_icon"
             android:layout_gravity="center"
             android:layout_width="@dimen/list_icon"
             android:layout_height="@dimen/list_icon"
             android:layout_marginRight="@dimen/abc_list_item_padding_horizontal_material"
             android:layout_marginEnd="@dimen/abc_list_item_padding_horizontal_material"
-            tools:src="@drawable/art_clear"/>
+            />
 
         <LinearLayout
             android:layout_height="wrap_content"
@@ -51,23 +51,23 @@
             android:orientation="vertical">
 
             <TextView
+                tools:text="Tomorrow"
                 android:id="@+id/list_item_date_textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                tools:text="Tomorrow"
-                />
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
 
             <TextView
+                tools:text="sunny"
                 android:id="@+id/list_item_forecast_textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textColor="@color/secondary_text"
-                tools:text="sunny"/>
+                android:textColor="@color/secondary_text"/>
         </LinearLayout>
 
         <TextView
+            tools:text="20"
             android:id="@+id/list_item_high_textview"
             android:layout_width="@dimen/forecast_text_width"
             android:layout_height="wrap_content"
@@ -77,10 +77,10 @@
             android:layout_marginEnd="@dimen/forecast_temperature_space"
             android:fontFamily="sans-serif-light"
             android:textColor="@color/primary_text"
-            android:textSize="@dimen/forecast_text_size"
-            tools:text="20"/>
+            android:textSize="@dimen/forecast_text_size"/>
 
         <TextView
+            tools:text="16"
             android:id="@+id/list_item_low_textview"
             android:layout_width="@dimen/forecast_text_width"
             android:layout_height="wrap_content"
@@ -88,8 +88,7 @@
             android:gravity="right"
             android:fontFamily="sans-serif-light"
             android:textColor="@color/forecast_low_text"
-            android:textSize="@dimen/forecast_text_size"
-            tools:text="16"/>
+            android:textSize="@dimen/forecast_text_size"/>
 
     </LinearLayout>
 </FrameLayout>
