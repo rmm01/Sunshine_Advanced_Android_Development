@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/secondary_text"
-                tools:text="20"/>
+                tools:text="sunny"/>
         </LinearLayout>
 
         <TextView
