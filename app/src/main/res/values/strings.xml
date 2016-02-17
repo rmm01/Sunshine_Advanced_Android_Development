@@ -87,9 +87,9 @@
     <string name="pref_art_pack_label_sunshine">Default</string>
 
     <!-- Label for cute dogs option in art pack preference [CHAR LIMIT=25] -->
-    <string name="pref_art_pack_label_cute_dogs">Low Resolution</string>
+    <string name="pref_art_pack_label_cute_dogs">Online</string>
 
-    <string name="pref_art_pack_label_dark">Dark</string>
+    <string name="pref_art_pack_label_dark">Dark Online</string>
 
     <!-- Key name for art pack unit preference in SharedPreferences [CHAR LIMIT=NONE] -->
     <string name="pref_art_pack_key" translatable="false">art_pack</string>
@@ -215,6 +215,9 @@
     <string name="condition_962">Hurricane</string>
 
     <string name="condition_unknown">Unknown (<xliff:g id="low">%1$s</xliff:g>)</string>
+
+    <!-- For Shared Element Transitions -->
+    <string name="detail_icon_transition_name" translatable="false">TN_DetailIcon</string>
 
     <!-- Used to form a severe weather alert that reads "Heads up: <weather> in <location>!" -->
     <string name="gcm_weather_alert">Heads up: %1$s in %2$s!</string>
